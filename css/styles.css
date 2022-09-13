@@ -1,0 +1,217 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap');
+
+/* Global */
+
+*{  
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    background-color: hsl(30, 38%, 92%);
+    font-size: 14px;
+}
+
+img{
+    max-width: 100%;
+}
+
+/* Utilities */
+
+h1{
+    color: hsl(212, 21%, 14%);
+    font-family: 'Fraunces', serif;
+}
+
+.price{
+    font-family: 'Fraunces', serif;
+    color: hsl(158, 36%, 37%);
+}
+
+p, h2, .price2{
+    font-family: 'Montserrat', sans-serif;
+    color: hsl(228, 12%, 48%);
+}
+
+/*Components*/
+.container{
+    position: absolute;
+    width: 600px;
+    height: 450px;
+    left: 420px;
+    top: 175px;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 10px;
+}
+
+picture{
+    position: absolute;
+    width: 300px;
+    height: 450px;
+    left: 0px;
+    top: 0px;
+}
+
+h2 {
+    position: absolute;
+    height: 15px;
+    left: 55.25%;
+    right: 29.42%;
+    top: calc(50% - 15px/2 - 185.5px);
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: 5px;
+}
+
+h1 {
+    position: absolute;
+    height: 96px;
+    left: 55.33%;
+    right: 5.33%;
+    top: calc(50% - 96px/2 - 110px);
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 32px;
+}
+
+p {
+    position: absolute;
+    height: 92px;
+    left: 55.25%;
+    right: 5.25%;
+    top: calc(50% - 92px/2 + 8px);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 23px;
+}
+
+.price{
+    position: absolute;
+    height: 32px;
+    left: 55.33%;
+    right: 23.5%;
+    top: calc(50% - 32px/2 + 99px);
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 32px;
+}
+
+.price2{
+    position: absolute;
+    height: 23px;
+    left: 79.67%;
+    right: 12.33%;
+    top: calc(50% - 23px/2 + 99.5px);
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 23px;
+    text-decoration-line: line-through;
+}
+
+.button{
+    position: absolute;
+    left: 55.33%;
+    right: 5.33%;
+    top: 82.22%;
+    bottom: 7.11%;
+    background: hsl(158, 36%, 37%);
+    color: hsl(0, 0%, 100%);
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+}
+
+.button:hover{
+    background-color: hsl(158deg, 36%, 25%);
+}
+
+
+.attribution{
+    position: absolute;
+    left: 7%;
+    right: 7%;
+    margin-top: 40rem;
+    text-align: center;
+}
+
+@media only screen and (max-width: 640px) {
+    .container {
+        position: absolute;
+        max-width: 90%;
+        width: 343px;
+        height: 611px;
+        left: 16px;
+        top: 28px;
+    }
+
+    picture{
+        position: relative;
+        width: 300px;
+        height: 450px;
+        left: 0px;
+        top: 0px;
+    }
+
+    h2{
+        position: absolute;
+        height: 15px;
+        left: 7%;
+        right: 66.18%;
+        top: calc(50% - 15px/2 - 34px);
+    }
+
+    h1{
+        position: absolute;
+        height: 64px;
+        left: 7%;
+        right: 7%;
+        top: calc(50% - 64px/2 + 17.5px);
+    }
+
+    p {
+        position: absolute;
+        height: 92px;
+        left: 7%;
+        right: 7%;
+        top: calc(50% - 92px/2 + 111.5px);
+    }
+
+    .price{
+        position: absolute;
+        left: 7.14%;
+        right: 36.3%;
+        top: 79.71%;
+        bottom: 15.06%;
+    }
+
+    .price2{
+        position: absolute;
+        left: 50.26%;
+        right: 0%;
+        top: 80.81%;
+        bottom: 15.06%;
+    }
+
+    .button{
+        position: absolute;
+        width: 295px;
+        height: 48px;
+        left: 25px;
+        top: 539px;
+    }
+    
+    .button:hover{
+        background-color: hsl(158deg, 36%, 25%);
+    }
+
+    .attribution{
+        padding-top: 10px;
+        text-align: center;
+    }
+}
